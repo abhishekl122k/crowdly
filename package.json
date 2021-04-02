@@ -8,6 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@portis/web3": "^3.0.10",
+    "@truffle/hdwallet-provider": "^1.2.6",
     "fs-extra": "^9.1.0",
     "ganache-cli": "^6.12.2",
     "mocha": "^8.3.2",
