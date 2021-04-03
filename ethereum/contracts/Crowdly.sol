@@ -1,6 +1,7 @@
-pragma solidity ^0.5.0;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
 
-contract Spectrum {
+contract Crowdly {
     address[] public deployedPosts;
 
     function createPost(string memory content, string memory name)
@@ -80,7 +81,7 @@ contract Post {
             complete();
         } else {
             if (yays[msg.sender] == 0 && nays[msg.sender] == 0) {
-                voted.push(msg.sender);
+                voted.push(payable(msg.sender));
             }
             require(msg.value >= yayprice);
             require(yays[msg.sender] <= 3);
@@ -97,7 +98,7 @@ contract Post {
             complete();
         } else {
             if (yays[msg.sender] == 0 && nays[msg.sender] == 0) {
-                voted.push(msg.sender);
+                voted.push(payable(msg.sender));
             }
             require(msg.value >= nayprice);
             require(nays[msg.sender] <= 3);
@@ -142,7 +143,7 @@ contract Post {
         address manager_init,
         string memory content_init,
         string memory name_init
-    ) public {
+    ){
         name = name_init;
         manager = manager_init;
         tempAddress = manager;
