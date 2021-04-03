@@ -74,7 +74,7 @@ class PostIndex extends Component {
             extra: (
                 <div>
                 <Button.Group>
-                    <Button disabled >Pool: {post.pool} ETH</Button>
+                    <Button disabled >Pool: {post.pool.toString().substring(0,4)} ETH</Button>
                     <Button.Or text='  ' />
                     
                         

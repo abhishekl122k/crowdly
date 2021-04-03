@@ -68,7 +68,7 @@ class PredictForm extends Component {
           const accounts = await web3.eth.getAccounts();
           await post.methods.voteNay().send({
             from: accounts[0],
-            value:web3.utils.toWei(toString(this.props.nayprice.toString()),'ether')
+            value:web3.utils.toWei(this.props.nayprice.toString(),'ether')
           });
           Router.pushRoute(`/home/feed`);
       } catch(err) {
@@ -98,10 +98,10 @@ class PredictForm extends Component {
               <Card.Content extra>
                 <div className='ui two buttons'>
                   <Button disabled basic color='green'>
-                    Yes: {this.props.yayprice} ETH
+                    Yes: {this.props.yayprice.toString().substring(0,4)} ETH
                   </Button>
                   <Button disabled basic color='red'>
-                    No: {this.props.nayprice} ETH
+                    No: {this.props.nayprice.toString().substring(0,4)} ETH
                   </Button>
                 </div>
                 <br/>
@@ -128,7 +128,7 @@ class PredictForm extends Component {
                     </Button.Content>
                   </Button>
                   <Button.Or text='  ' />
-                  <Button disabled>Pay {this.props.yayprice} ETH</Button>
+                  <Button disabled>Pay {this.props.yayprice.toString().substring(0,4)} ETH</Button>
                 </Button.Group>
             </Form>
 
@@ -144,7 +144,7 @@ class PredictForm extends Component {
                     </Button.Content>
                   </Button>
                   <Button.Or text='  ' />
-                  <Button disabled >Pay {this.props.nayprice} ETH</Button>
+                  <Button disabled >Pay {this.props.nayprice.toString().substring(0,4)} ETH</Button>
                 </Button.Group>
                 </Form>
             </center>
