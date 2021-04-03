@@ -19,10 +19,10 @@
  */
 
 const HDWalletProvider = require('@truffle/hdwallet-provider');
-const mnemonic = require('./secrets.json');
+//const mnemonic = require('./secrets.json');
 // const infuraKey = "fj4jll3k.....";
 
-// const mnemonic = "alone ahead plunge pact soda skull lion wall index story board normal"
+const mnemonic = "alone ahead plunge pact soda skull lion wall index story board normal"
 
 module.exports = {
   /**

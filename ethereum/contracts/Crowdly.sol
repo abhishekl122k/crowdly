@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.5.0;
 
 contract Crowdly {
     address[] public deployedPosts;
@@ -143,7 +143,7 @@ contract Post {
         address manager_init,
         string memory content_init,
         string memory name_init
-    ){
+    ) {
         name = name_init;
         manager = manager_init;
         tempAddress = manager;
