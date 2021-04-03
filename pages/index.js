@@ -29,18 +29,18 @@ class Index extends Component {
 
   render() {
     return(
-      <body style={{ backgroundColor: 'white', height: 'window.height', width: '100%' }}>
-      <Segment>
+      <body style={{ backgroundColor: '#ACB4BF', height: 'window.height', width: '100%' }}>
+      <Segment inverted >
         <Head>
               <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
         </Head>
-        <Grid columns='equal'>
+        <Grid inverted columns='equal'>
         <Grid.Row>
         <Grid.Column>
           
         </Grid.Column>
         <Grid.Column>
-          <h1 style={{ fontFamily: 'lucida console', fontSize: '50px', textAlign:'center' }}>SPECTRUM</h1>
+          <h1 style={{ fontFamily: 'lucida console', fontSize: '50px', textAlign:'center' }}>CROWDLY</h1>
         </Grid.Column>
         <Grid.Column>
          
@@ -57,17 +57,17 @@ class Index extends Component {
       </Grid.Row>
       </Grid>
         
-      <Segment placeholder >
+      <Segment placeholder  inverted >
         <Grid columns={2} stackable textAlign='center'>
           <Divider vertical >--)</Divider>
 
           <Grid.Row verticalAlign='middle'>
             <Grid.Column>
               <Header icon >
-                <h2 style={{ fontFamily: 'lucida console', fontSize: '40px', textAlign:'center' }}>Where the world <br/>gets its News</h2>  
+                <h2 style={{ fontFamily: 'lucida console', fontSize: '40px', textAlign:'center',color: 'white' }}>News for the<br/>entire world</h2>  
                 <p style={{ fontFamily: 'lucida console', color: 'gray',textAlign:'justify'}}>These issues of privacy, freedom, and lack of control at the user's end gave rise to a new form of social networks, i.e., Decentralized Social Networks, - A network controlled and managed over distributed systems rather than one single entity. This concept gave rise to new social networks that are now very popular and have a vast user base.</p>
                 <br/>
-              <Image src='https://www.ibm.com/blogs/blockchain/wp-content/uploads/2019/09/Retina_Display-636831316.jpg' size='large' rounded />
+              <Image src='https://media.istockphoto.com/photos/global-network-concept-picture-id1005148228?k=6&m=1005148228&s=612x612&w=0&h=iOXp2r_JDjcOePwJahnnzTICHuqyoxX8McALRWCapqg=' size='large' rounded />
                 
               </Header>
 
@@ -75,7 +75,7 @@ class Index extends Component {
 
             <Grid.Column>
               <Header icon >
-                <h2 style={{ fontFamily: 'lucida console', fontSize: '40px', textAlign:'center' }}>Join The Community!</h2>
+                <h2 style={{ fontFamily: 'lucida console', fontSize: '40px', textAlign:'center', color: 'white' }}>Join The Community!</h2>
                 
                
                 <Map/><br/>

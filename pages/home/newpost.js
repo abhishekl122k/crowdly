@@ -3,7 +3,7 @@ import { Form, Input, Message, Button, Card, Icon } from 'semantic-ui-react';
 import Layout from '../../components/Layout';
 import web3 from '../../ethereum/web3';
 import { Router } from '../../routes';
-import factory from '../../ethereum/factory';
+import factory from '../../ethereum/deployed_contracts/factory';
 
 class PredictForm extends Component {
 

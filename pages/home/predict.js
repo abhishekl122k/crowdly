@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Form, Input, Message, Button, Card, Icon } from 'semantic-ui-react';
 import Layout from '../../components/Layout';
-import Post from '../../ethereum/post';
+import Post from '../../ethereum/deployed_contracts/post';
 import web3 from '../../ethereum/web3';
 import { Router } from '../../routes';
 
@@ -98,10 +98,10 @@ class PredictForm extends Component {
               <Card.Content extra>
                 <div className='ui two buttons'>
                   <Button disabled basic color='green'>
-                    Yes: {this.props.yayprice.toString().substring(0,4)} ETH
+                    Yes: {this.props.yayprice.toString().substring(0,6)} ETH
                   </Button>
                   <Button disabled basic color='red'>
-                    No: {this.props.nayprice.toString().substring(0,4)} ETH
+                    No: {this.props.nayprice.toString().substring(0,6)} ETH
                   </Button>
                 </div>
                 <br/>
@@ -128,7 +128,7 @@ class PredictForm extends Component {
                     </Button.Content>
                   </Button>
                   <Button.Or text='  ' />
-                  <Button disabled>Pay {this.props.yayprice.toString().substring(0,4)} ETH</Button>
+                  <Button disabled>Pay {this.props.yayprice.toString().substring(0,6)} ETH</Button>
                 </Button.Group>
             </Form>
 
@@ -144,7 +144,7 @@ class PredictForm extends Component {
                     </Button.Content>
                   </Button>
                   <Button.Or text='  ' />
-                  <Button disabled >Pay {this.props.nayprice.toString().substring(0,4)} ETH</Button>
+                  <Button disabled >Pay {this.props.nayprice.toString().substring(0,6)} ETH</Button>
                 </Button.Group>
                 </Form>
             </center>

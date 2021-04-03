@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Card, Button, Icon } from 'semantic-ui-react';
 import Layout from '../../components/Layout';
-import Post from '../../ethereum/post';
-import Factory from '../../ethereum/factory';
+import Post from '../../ethereum/deployed_contracts/post';
+import Factory from '../../ethereum/deployed_contracts/factory';
 
 
 class PostIndex extends Component {
@@ -74,7 +74,7 @@ class PostIndex extends Component {
             extra: (
                 <div>
                 <Button.Group>
-                    <Button disabled >Pool: {post.pool.toString().substring(0,4)} ETH</Button>
+                    <Button disabled >Pool: {post.pool.toString().substring(0,6)} ETH</Button>
                     <Button.Or text='  ' />
                     
                         

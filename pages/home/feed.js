@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Card, Button, Icon } from 'semantic-ui-react';
-import Factory from '../../ethereum/factory';
+import Factory from '../../ethereum/deployed_contracts/factory';
 import Layout from '../../components/Layout';
 import { Link } from '../../routes';
-import Post from '../../ethereum/post';
+import Post from '../../ethereum/deployed_contracts/post';
 
 
 
@@ -123,10 +123,10 @@ class PostIndex extends Component {
             <div>
             <div className='ui two buttons'>
             <Button size='mini' disabled basic color='green'>
-                Yes: {post.yayprice.toString().substring(0,4)} ETH
+                Yes: {post.yayprice.toString().substring(0,6)} ETH
             </Button>
             <Button size='mini' disabled basic color='red'>
-                No: {post.nayprice.toString().substring(0,4)} ETH
+                No: {post.nayprice.toString().substring(0,6)} ETH
             </Button>
             </div>
             <br/>
@@ -134,7 +134,7 @@ class PostIndex extends Component {
             {this.renderButton(post.completed, post.verdict, post.address)}
             <br/>
             <br/>
-                <Button disabled size='mini'>Pool: {post.pool.toString().substring(0,4)} ETH</Button>
+                <Button disabled size='mini'>Pool: {post.pool.toString().substring(0,6)} ETH</Button>
                     
           </div>
         ),
