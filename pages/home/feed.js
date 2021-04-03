@@ -123,10 +123,10 @@ class PostIndex extends Component {
             <div>
             <div className='ui two buttons'>
             <Button size='mini' disabled basic color='green'>
-                Yes: {post.yayprice} ETH
+                Yes: {post.yayprice.toString().substring(0,4)} ETH
             </Button>
             <Button size='mini' disabled basic color='red'>
-                No: {post.nayprice} ETH
+                No: {post.nayprice.toString().substring(0,4)} ETH
             </Button>
             </div>
             <br/>
@@ -134,7 +134,7 @@ class PostIndex extends Component {
             {this.renderButton(post.completed, post.verdict, post.address)}
             <br/>
             <br/>
-                <Button disabled size='mini'>Pool: {post.pool} ETH</Button>
+                <Button disabled size='mini'>Pool: {post.pool.toString().substring(0,4)} ETH</Button>
                     
           </div>
         ),
