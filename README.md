@@ -58,5 +58,5 @@ We aim to solve this problem of misinformation by means of crowd verification an
 - Truffle (for developement)
 
 Demo video : https://youtu.be/AA3EXk56xZ4
-
+Presentation at MIT Bitcoin Expo Hackathon 2021: https://youtu.be/t6bu1Rx_ApM?si=bRe_JibQF_LZ2nYX&t=691
 
